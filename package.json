@@ -9,12 +9,14 @@
   "author": "1615 PG6301 1 KONT 2023 08",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^1.12.3"
+    "parcel": "^2.7.0",
+    "process": "^0.11.10"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router": "^6.8.1",
-    "router-dom": "^2.2.10"
+    "@parcel/transformer-react-refresh-wrap": "^2.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2",
+    "src": "^1.1.2"
   }
 }
