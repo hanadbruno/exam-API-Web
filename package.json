@@ -1,0 +1,14 @@
+{
+  "name": "exam-api-web-main",
+  "version": "1.0.0",
+  "description": "konte exam",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/client/index.html"
+  },
+  "author": "1615 PG6301 1 KONT 2023 08",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  }
+}
