@@ -10,7 +10,10 @@ export function AddActivity() {
         console.log("Submitting")
         fetch("/api/employees",{
         method: "POST",
-        body: JSON.stringify({task, department, hours})
+        body: JSON.stringify({task, department, hours}),
+        headers: {
+            "Content-Type": "application/json"
+        }
     })
 }
 
