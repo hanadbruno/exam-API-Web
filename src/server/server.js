@@ -8,7 +8,8 @@ const app = express();
 const activity = [{
     id: 1,
     task: "customer-contact",
-    department: "sales"
+    department: "sales",
+    hours: 0
 
 }]
 

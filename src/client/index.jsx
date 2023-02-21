@@ -8,30 +8,39 @@ import {ListEmployees} from '../client/ListEmployees'
 
 function App (){
     return <BrowserRouter>
+   <nav>
+<Link to={"/"}>Home</Link>
+   </nav>
+    <main>
           <Switch>
             <Route path={"/employees"}>
                 <ListEmployees/>
             </Route>
             <Route path={"/add"}>
-                <h1>Add Employees</h1>
+                <AddActivity/>
             </Route>
             <Route path={"/edit"}>
                 <h1>Remove Employees</h1>
             </Route>
-            <Route path={"/"}>
+            <Route exact path={"/"}>
                 <h1>Employee Application home page</h1>
                 <ul>
-                    <Link to ={"/Employes"}>See Employees</Link>
-                    <Link to ={"/add"}>Add Employees</Link>
-                    <Link to ={"/edit"}>Remove Employees</Link>
+                    <li><Link to ={"/Employes"}>See Employees</Link></li>
+                    <li><Link to ={"/add"}>Add Employees</Link></li>
+                    <li> <Link to ={"/edit"}>Remove Employees</Link></li>
                 </ul>
             </Route>
 
           </Switch>
+          </main>
     </BrowserRouter>
 }
 console.log(App);
 ReactDOM.render(<App/>, document.getElementById("appen"));
+
+function AddActivity() {
+    return <h1>Add Employees</h1>;
+}
 
 function listEmployees() {
     return <h1>List all Employees</h1>;
