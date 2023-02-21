@@ -4,6 +4,7 @@ import {Route, Switch} from "react-router";
 import {BrowserRouter, Link} from "react-router";
 
 
+
 function Application (){
     return <BrowserRouter>
           <Switch>
@@ -28,5 +29,5 @@ function Application (){
           </Switch>
     </BrowserRouter>
 }
-
-ReactDOM.render(<div>Hello World</div>, document.getElementById("app"));
+console.log(Application);
+ReactDOM.render(<Application />, document.getElementById("root"));
