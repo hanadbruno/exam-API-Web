@@ -24,7 +24,7 @@ app.get("/api/employees", (req, res) =>{
 
 app.post("api/employees", (req, res)=>{
     const {task, department, hours} = req.body;
-    console.log(req.body);
+   
  activity.push({task, department, hours, id: activity.length+1})
  res.status(201);
  res.end();

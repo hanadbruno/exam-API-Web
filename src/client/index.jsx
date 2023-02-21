@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {Route, Switch} from "react-router";
-import {BrowserRouter, Link} from "react-router";
+import {BrowserRouter, Link} from "react-router-dom";
 import {ListEmployees} from '../client/ListEmployees'
+import {AddActivity} from '../client/AddActivity';
 
 
 
@@ -38,10 +39,3 @@ function App (){
 console.log(App);
 ReactDOM.render(<App/>, document.getElementById("appen"));
 
-function AddActivity() {
-    return <h1>Add Employees</h1>;
-}
-
-function listEmployees() {
-    return <h1>List all Employees</h1>;
-}
