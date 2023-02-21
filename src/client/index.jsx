@@ -5,7 +5,7 @@ import {BrowserRouter, Link} from "react-router";
 
 
 
-function Application (){
+function App (){
     return <BrowserRouter>
           <Switch>
             <Route path={"/employees"}>
@@ -29,5 +29,5 @@ function Application (){
           </Switch>
     </BrowserRouter>
 }
-console.log(Application);
-ReactDOM.render(<Application />, document.getElementById("root"));
+console.log(App);
+ReactDOM.render(<App />, document.getElementById("root"));
