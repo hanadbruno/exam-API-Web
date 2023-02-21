@@ -22,5 +22,11 @@ export function ListEmployees() {
     if(error){
         return<div>Oops! A malfunction happened...</div>
     }
-    return <h1>List all Employees</h1>;
+    return <>
+    <h1>List all Employees</h1>
+    {employees.map(id, employee => (
+        <li key={id}>{employee.task}</li>
+        
+    ))}
+    </>;
 }
