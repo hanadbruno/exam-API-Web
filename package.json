@@ -6,11 +6,14 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run parcel\"",
     "server": "nodemon --watch src/server src/server/server.js",
-    "parcel": "parcel watch src/client/index.html"
+    "parcel": "parcel watch src/client/index.html",
+    "test": "jest"
   },
   "author": "1615 PG6301 1 KONT 2023 08",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "babel-jest": "^29.4.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "concurrently": "^7.6.0",
@@ -31,5 +34,16 @@
   },
   "browserslist": [
     "last 1 chrome version"
-  ]
+  ],
+  "jest": {
+    "transform": {
+      "\\.jsx": "babel-jest"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  }
 }
