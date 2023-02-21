@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {Route, Switch} from "react-router";
 import {BrowserRouter, Link} from "react-router";
+import {ListEmployees} from '../client/ListEmployees'
 
 
 
@@ -9,7 +10,7 @@ function App (){
     return <BrowserRouter>
           <Switch>
             <Route path={"/employees"}>
-                <h1>List all Employees</h1>
+                <ListEmployees/>
             </Route>
             <Route path={"/add"}>
                 <h1>Add Employees</h1>
@@ -30,4 +31,8 @@ function App (){
     </BrowserRouter>
 }
 console.log(App);
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App/>, document.getElementById("appen"));
+
+function listEmployees() {
+    return <h1>List all Employees</h1>;
+}
