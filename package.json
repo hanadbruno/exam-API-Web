@@ -11,6 +11,8 @@
   "author": "1615 PG6301 1 KONT 2023 08",
   "license": "ISC",
   "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "concurrently": "^7.6.0",
     "nodemon": "^2.0.7",
     "parcel": "^1.12.3",
@@ -26,5 +28,8 @@
     "react-router-dom": "^5.2.0",
     "routes": "^2.1.0",
     "src": "^1.1.2"
-  }
+  },
+  "browserslist": [
+    "last 1 chrome version"
+  ]
 }
