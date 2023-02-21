@@ -8,7 +8,7 @@ export function AddActivity() {
     function submit(e){
         e.preventDefault();
         console.log("Submitting")
-        fetch("/api/employees",{
+        fetch("/api/activities",{
         method: "POST",
         body: JSON.stringify({task, department, hours}),
         headers: {

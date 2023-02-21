@@ -1,5 +1,3 @@
-
-
 const express = require("express");
 const { dirname } = require("path");
 const path =  require("path");
@@ -17,12 +15,12 @@ const activity = [{
 
 app.use(bodyparser.json())
 app.use(express.static(path.resolve(__dirname, "..", "..", "dist")));
-app.get("/api/employees", (req, res) =>{
+app.get("/api/activities", (req, res) =>{
     console.log(activity);
     res.json(activity);
 })
 
-app.post("api/employees", (req, res)=>{
+app.post("/api/activities", (req, res)=>{
     const {task, department, hours} = req.body;
    
  activity.push({task, department, hours, id: activity.length+1})
