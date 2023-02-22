@@ -15,6 +15,7 @@ const activity = [{
 
 app.use(bodyparser.json())
 app.use(express.static(path.resolve(__dirname, "..", "..", "dist")));
+
 app.get("/api/activities", (req, res) =>{
     console.log(activity);
     res.json(activity);
