@@ -1,24 +1,21 @@
 import React, { useEffect, useState } from "react";
 
-export function ListActivities() {
+export function ListActivities({activityApi}) {
     const [activities, setActivity] = useState();
     const [error, setError] = useState();
 
    async function loadActivity() {
     
     try {
-        const res = await fetch("/api/activities");
-        if (!res.ok){
-            throw new Error(`Something is not working ${res.url}:  ${res.statusText}`);
-        }
-        const json = await res.json();
-        setActivity(json);
+       
+        setActivity(await activityApi.ListActivities());
     } catch(e){
         setError(e); 
     }
 }
 
     useEffect(loadActivity, []);
+    
 
     if(error){
         return<div>Oops! A malfunction happened...</div>

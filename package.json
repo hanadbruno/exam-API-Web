@@ -20,7 +20,8 @@
     "nodemon": "^2.0.7",
     "parcel": "^1.12.3",
     "parcel-bundler": "^1.12.3",
-    "process": "^0.11.10"
+    "process": "^0.11.10",
+    "react-test-renderer":"^npm 17.0.1"
   },
   "dependencies": {
     "@parcel/transformer-react-refresh-wrap": "^2.3.2",

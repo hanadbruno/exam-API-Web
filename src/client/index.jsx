@@ -24,7 +24,7 @@ function App (){
                 <h1>Remove activity</h1>
             </Route>
             <Route exact path={"/"}>
-                <h1>Employee Application home page</h1>
+                <h1>Activity Monitor Application home page</h1>
                 <ul>
                     <li><Link to ={"/activities"}>See activities</Link></li>
                     <li><Link to ={"/add"}>Add activities</Link></li>
